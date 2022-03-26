@@ -1,0 +1,13 @@
+.categoryupdate_main {
+    min-height: 100vh;
+}
+
+.categoryupdate_main_container  {
+    position: absolute;
+    top: 50%;
+    width: calc(100% - 260px);
+    left: 40%;
+    min-height: calc(100vh- 60px);
+
+}
+

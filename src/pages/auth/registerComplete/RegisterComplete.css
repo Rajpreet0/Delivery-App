@@ -1,0 +1,25 @@
+
+.registerComplete_main h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.registerComplete_main h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.registerComplete_main a {
+    text-decoration: none;
+    color: #bf2e19;
+}
+
+.registerComplete_main a:hover {
+    text-decoration: underline;
+}
+
+.registerComplete_main .auth_small {
+    font-size: 80%;
+    text-align: center;
+}

@@ -1,0 +1,64 @@
+.cart_main {
+    margin-top: 100px;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.cart_main h4 {
+    font-size: 30px;
+}
+
+.images_product_order {
+    width: 100px;
+    height: 100px;
+}
+
+.order_content_table {
+    border-collapse: collapse;
+    margin: 50px 0;
+    font-size: 1.2em;
+    min-width: 400px;
+}
+
+.order_content_table thead tr {
+   background-color: #bf2e19;
+   color: white;
+   text-align: left;
+   font-weight: bold;
+}
+
+.order_content_table th,
+.order_content_table td {
+    padding: 12px 15px;
+}
+
+.summary_box {
+   height: 35vh;
+   width: 25vw;
+   background-color: #f0f0f0;
+   border-radius: 20px;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+
+.summary_box h4 {
+    margin: 10px;
+    font-size: 30px;
+}
+
+.summary_box p {
+    margin: 5px;
+    font-size: 15px;
+}
+
+.summary_box button {
+    margin: 15px;
+    background-color: #bf2e19;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 15px;
+}

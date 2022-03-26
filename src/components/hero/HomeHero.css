@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+
+.videoComponent_main {
+    min-height: 100vh;
+}
+
+.videoComponent_container {
+    background: #0c0c0c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    height: 800px;
+    position: relative;
+    z-index: 1;
+    margin-top: 2em;
+}
+
+.videoComponent_container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.6) 100%
+    ),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
+    z-index: 2; 
+}
+
+.videoComponent_bg{
+    position: absolute;
+    top: 0;
+    right: 0; 
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.videoComponent_bg video {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    background: #232e34;
+}
+
+.heroContent{
+    z-index: 3;
+    max-width: 1200px;
+    position: absolute;
+    padding: 8px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.hero-h1 {
+    color: #fff;
+    font-size: 68px;
+    text-align: center;
+    display: flex;
+    font-weight: 500;
+}
+
+
+.heroContent_headline {
+    display: flex;
+}
+
+.heroContent h1 {    
+    color: #fff;
+    font-size: 68px;
+    text-align: center;
+    display: flex;
+    font-family: 'Dancing Script', cursive;
+}
+
+.heroContent h2 {    
+    color: #fff;
+    text-align: center;
+    display: flex;
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-family: 'Dancing Script';
+}
+
+.heroContent-btn {
+    margin-top: 30px;
+    border-radius: 50px;
+    padding: 15px;
+    background: #bf2e19;
+    width: 150px;
+    border: 2px solid #bf2e19;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.2s ease;
+    display: flex;
+}
+
+.heroContent-btn a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+
+.heroContent-btn:hover {
+    background-color: transparent;
+    border: 2px solid #bf2e19;
+    transition: 0.2s ease;
+}
+
+@media  (max-width: 991px) {
+    .hero-h1-mobile {
+        font-size: 48px;
+    }
+    .hero-h1-typewirter-mobile {
+        font-size: 48px;
+    }
+
+    .hero-h1-mobile {
+      display: block;
+    }
+
+    .heroContent_headline-mobile {
+        display: block;
+    }
+
+    .hero-h1-typewirter-mobile {
+        display: block;
+    }
+
+    .hero-h1 {
+        display: none;
+      }
+  
+      .heroContent_headline {
+          display: none;
+      }
+  
+      .hero-h1-typewirter {
+          display: none;
+      }
+}

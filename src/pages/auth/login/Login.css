@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+.login_main {
+    font-weight: 500;
+}
+
+.logo_top {
+    position: absolute;
+    margin: 20px;
+    color: white;
+    font-size: 40px;
+}
+
+.logo_top span {
+    font-family: 'Dancing Script', cursive;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.logo_top span:hover {
+    letter-spacing: 8px;
+    transition: .3s ease;
+}
+
+.login_main h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.login_main h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.login_main a {
+    text-decoration: none;
+    color: #bf2e19;
+}
+
+.login_main a:hover {
+    text-decoration: underline;
+}
+
+.login_main .auth_small {
+    font-size: 80%;
+    text-align: center;
+}
+
+.auth_split_screen {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth_left {
+    height: 200px;
+}
+
+.auth_left, .auth_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth_left {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), 
+        url('../../../images/auth_images/login_background.jpg');
+    background-size: cover;
+}
+
+.auth_left .auth_copy {
+    color: white;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.auth_left p {
+    font-weight: 400;
+}
+
+.auth_right  .auth_copy {
+    color: black;
+    text-align: center;
+}
+
+.auth_right  .auth_copy p {
+    margin: 1.5rem 0;
+    font-size: 0.875rem;
+}
+
+.auth_right form {
+    width: 328px;
+}
+
+.auth_right form select,
+.auth_right form input[type="text"],
+.auth_right form input[type="file"],
+.auth_right form input[type="number"],
+.auth_right form input[type="email"],
+.auth_right form input[type="password"] {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #c4c4c4;
+    padding: 1em;
+    margin-bottom: 1.25rem;
+    font-size: 0.875rem;
+}
+
+.auth_input_container label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.75rem;
+}
+
+.auth_input_container .password {
+  position: relative;
+}
+
+/*
+.auth_input_container .password .input_password_icon {
+    position: absolute;
+    top: 42px;
+    cursor: pointer;
+    right: 16px;
+}
+
+*/
+
+.auth_signup_btn {
+    display: block;
+    width: 100%;
+    background: #bf2e19;
+    color: white;
+    font-weight: 700;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+
+.auth_signup_btn:hover {
+    background-color: transparent;
+    border: 2px solid #bf2e19;
+    color: black;
+    transition: .3s ease;
+}
+
+
+@media screen and (min-width: 900px) {
+    .auth_split_screen {
+        flex-direction: row;
+        height: 100vh;
+    }
+    
+    .auth_left,
+    .auth_right {
+        display: flex;
+        width: 50%;
+        height: auto;
+    }
+ 
+}
+
+@media screen and (max-width: 900px) {
+    .logo_top {
+        margin: 10px;
+        font-size: 25px;
+    }
+    .auth_copy h1 {
+        font-size: 1.7rem;
+    }
+    .auth_right {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

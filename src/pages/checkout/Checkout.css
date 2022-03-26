@@ -1,0 +1,24 @@
+.checkout_main {
+    margin-top: 50px;
+}
+
+.checkout_button button {
+    color: white;
+    background-color: #bf2e19;
+    padding: 10px;
+    width: 75px;
+    border-radius: 25px;
+    border: none;
+    margin: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.checkout_button button:hover {
+    transform: scale(1.15);
+    transition: .3s;
+    border: 1px solid #bf2e19;
+    background-color: transparent;
+    color: #bf2e19;
+}

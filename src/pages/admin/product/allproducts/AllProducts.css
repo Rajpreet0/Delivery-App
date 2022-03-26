@@ -1,0 +1,16 @@
+.allproducts_main {
+    min-height: 100vh;
+}
+
+.allproducts_main_container {
+    position: absolute;
+    top: 6%;
+    width: calc(100% - 260px);
+    left: 40%;
+    min-height: calc(100vh- 60px);
+}
+
+
+.container_product_card_admin {
+    width: 100%;
+}

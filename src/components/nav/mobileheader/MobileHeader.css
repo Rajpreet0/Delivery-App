@@ -1,0 +1,110 @@
+.MobileHeader_Container{
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: grid;
+    align-items: center;
+    top: 0;
+    left: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.gifullpizza_mobile{
+  color: white;
+  font-size: 45px;
+  transition: .3s ease;
+}
+
+.gifullpizza_mobile:hover {
+    font-size: 50px;
+    transition: .3s ease;
+}
+
+.MobileHeader_Logo{
+    position: absolute;
+    top: 1.2rem;
+    left: 1.5rem;
+    background: #bf2e19;
+    font-size: 2rem;
+    cursor: pointer;
+    outline: none;
+}
+
+.MobileHeader_Logo img {
+    max-width: 50px;
+    cursor: pointer;
+}
+
+.MobileHeader_Icon {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.5rem;
+    background: #bf2e19;
+    font-size: 2rem;
+    cursor: pointer;
+    outline: none;
+}
+
+.MobileHeader_Wrapper {
+    color: #bf2e19;
+}
+
+.MobileHeader_Wrapper ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(06, 80px);
+    text-align: center;
+}
+
+.MobileHeader_Wrapper ul a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: .3s ease;
+}
+
+.MobileHeader_Wrapper ul a:hover {
+    letter-spacing: 4px;
+    transition: .3s ease;
+}
+
+.MobileHeader_BtnWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.MobileHeader_BtnWrapper a {
+    border-radius: 50px;
+    background: transparent;
+    padding: 16px 64px;
+    color: #bf2e19;
+    font-size: 20px;
+    outline: none;
+    border: 2px solid #bf2e19;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    margin-left: 50px;
+}
+
+.MobileHeader_BtnWrapper a:hover {
+    transition: all 0.2s ease-in-out;
+    background: #bf2e19;
+    color: white;
+}
+
+
+@media screen and (max-width: 480px) {
+    .MobileHeader_Wrapper ul{
+        grid-template-rows: repeat(6, 60px);
+    }
+}
+

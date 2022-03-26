@@ -1,0 +1,84 @@
+.usernav_topbar {
+   position: fixed;
+   background: #fff;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08); 
+   width: 100%;
+   height: 60px;
+   padding: 0 20px;
+   display: grid;
+   grid-template-columns: 20fr 10fr ;
+   align-items: center;
+   z-index: 1;
+}
+
+.usernav_logo h2 {
+    color: #bf2e19;
+}
+
+.usernav_user {
+    position: relative;
+    width: 60%;
+}
+
+.usernav_user p {
+    letter-spacing: 1px;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    width: 60%;
+}
+
+.usernav_sidebar {
+    position: fixed;
+    top: 60px;
+    width: 260px;
+    height: calc(100% - 60px);
+    background: #bf2e19;
+    overflow-x: hidden;
+}
+
+.usernav_sidebar ul {
+    margin-top: 20px;
+}
+
+
+.usernav_sidebar ul li {
+    width: 100%;
+    list-style: none;
+}
+
+.usernav_sidebar ul li a {
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.usernav_icon {
+    min-width: 60px;
+    font-size: 24px;
+    text-align: center;
+    transition: .3s;
+}
+
+.usernav_sidebar ul li:hover {
+  transition: .3s;
+  transform: scale(1.1);
+  background: white;
+}
+
+.usernav_sidebar ul li:hover a {
+   color: #bf2e19;
+}
+
+@media (max-width: 1115px) {
+    .usernav_sidebar {
+        width: 60px;
+    }
+    .usernav_user p {
+        font-size: 15px;
+    }
+
+}

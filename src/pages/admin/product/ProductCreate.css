@@ -1,0 +1,12 @@
+.product_main{
+    min-height: 100vh;
+}
+
+.product_main_container  {
+    position: absolute;
+    top: 15%;
+    width: calc(100% - 260px);
+    left: 40%;
+    min-height: calc(100vh- 60px);
+
+}

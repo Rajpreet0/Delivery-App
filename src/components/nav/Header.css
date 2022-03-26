@@ -1,0 +1,114 @@
+header {
+    position: absolute;
+    background-color: #bf2e19;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.header header a  {
+    text-decoration: none;
+    transition: .3s;
+ }
+
+.header header span {
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+    letter-spacing: 2px;
+    margin-left: 10px;
+}
+
+.gifullpizza {
+    color: white;
+    font-size: 30px;
+}
+
+.icon_header {
+    color: white;
+    font-size: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.header_navigation {
+    display: flex;
+}
+.header_navigation li {
+    list-style: none;
+}
+
+.header_navigation li a {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition: ease .2s;
+    padding: 0 5px;
+    color: white;
+    font-weight: 500;
+    margin-right: 40px;
+    transition: 0.3s ease;
+    
+}
+
+.header_navigation li a:hover {
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+
+/*
+.header_navigation li a:hover{
+    font-size: 17px;
+    transition: ease .2s;
+    text-shadow:  0 0 8px rgba(102, 0, 102, 0.5);
+    font-weight: bold;
+}
+*/
+
+.header img {
+    max-width: 90px;
+}
+
+.header_mobileIcon {
+    display: none;
+}
+
+
+
+
+
+@media  (max-width: 991px) {
+    header {
+        padding: 10px 50px;
+    }
+    .header_navigation {
+        display: none;
+    }
+    .header_navigation header a h1{
+      font-size: 20px;
+    }
+    .header_mobileIcon {
+        display: flex;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 539px) {
+    header {
+        padding: 5px 25px;
+    }
+}
